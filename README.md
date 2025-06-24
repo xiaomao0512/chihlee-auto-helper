@@ -1,22 +1,41 @@
-🧠 Chihlee Exam Helper (Auto Question Parser)
-This is a lightweight userscript built for students using the Chihlee Digital Learning exam system. It helps extract visible question data and uses a language model (via OpenRouter API) to suggest answers directly in the browser console.
+📘 Chihlee Auto Summary Helper
+This is a simple browser userscript made for Chihlee Digital Learning exam pages.
+It extracts visible question content and uses an LLM via OpenRouter API to generate helpful key-point summaries for each question — focused on learning, not just answers.
 
-🚀 What It Does
-Auto-detects new questions when flipping pages in the exam interface
+✨ Features
+✅ Automatically detects page changes and new questions
 
-Parses question and options from the current page (no backend needed)
+🧠 Uses Claude (via OpenRouter) to summarize important concepts and reasoning
 
-Sends content to GPT via OpenRouter and shows the reply in your console
+💬 Does not give direct answers — helps with review and understanding
 
-Works with both single and multiple choice
+📝 Press Ctrl + S to export all summaries into a .txt note file
 
-Runs locally — it doesn't collect or store any personal data
+🧪 How to Use
+Install Tampermonkey extension in your browser
 
-🔧 Requirements
-Works only on https://dlc.chihlee.edu.tw/learn/exam/*
+Add this script (click Install or paste it manually)
 
-Install with Tampermonkey
+Visit dlc.chihlee.edu.tw/learn/exam/ and start answering
 
-You'll need an OpenRouter API key to use it
+Open DevTools (F12) to view summaries in the Console
 
-This script was made as a personal learning tool. It’s not meant for cheating, but to assist with reviewing and understanding questions more clearly using AI.
+Press Ctrl + S anytime to download your notes
+
+🔒 Privacy Notice
+Script runs only in your browser
+
+Parses only visible content on screen
+
+No user data is stored or transmitted
+
+This project is not affiliated with Chihlee University
+
+📦 Tech Info
+Model: anthropic/claude-3-haiku via OpenRouter
+
+Language: JavaScript (userscript)
+
+Runs on: Tampermonkey + Chrome / Edge / Firefox
+
+Author: @xiaomao0512

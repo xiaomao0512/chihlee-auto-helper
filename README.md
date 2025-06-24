@@ -1,41 +1,28 @@
 📘 Chihlee Auto Summary Helper
-This is a simple browser userscript made for Chihlee Digital Learning exam pages.
-It extracts visible question content and uses an LLM via OpenRouter API to generate helpful key-point summaries for each question — focused on learning, not just answers.
+This userscript helps students review Chihlee Digital Learning exam questions more effectively — not by giving answers, but by summarizing key ideas behind each question using AI.
 
-✨ Features
-✅ Automatically detects page changes and new questions
+✨ What It Does
+Detects when a new exam question appears
 
-🧠 Uses Claude (via OpenRouter) to summarize important concepts and reasoning
+Extracts the question and options from the page
 
-💬 Does not give direct answers — helps with review and understanding
+Uses OpenRouter (Claude) to summarize key concepts
 
-📝 Press Ctrl + S to export all summaries into a .txt note file
+No answers are given — it’s for learning, not cheating
 
-🧪 How to Use
-Install Tampermonkey extension in your browser
+You can press Ctrl + S to download all summaries as notes
 
-Add this script (click Install or paste it manually)
+🔒 Not a Cheating Tool
+This tool is meant to support learning, not to break rules.
+It shows high-level explanations — not which checkbox to click.
 
-Visit dlc.chihlee.edu.tw/learn/exam/ and start answering
+✅ How to Use
+Install Tampermonkey
 
-Open DevTools (F12) to view summaries in the Console
+Add the script
 
-Press Ctrl + S anytime to download your notes
+Open Chihlee’s exam page and start
 
-🔒 Privacy Notice
-Script runs only in your browser
+Open DevTools to see summaries
 
-Parses only visible content on screen
-
-No user data is stored or transmitted
-
-This project is not affiliated with Chihlee University
-
-📦 Tech Info
-Model: anthropic/claude-3-haiku via OpenRouter
-
-Language: JavaScript (userscript)
-
-Runs on: Tampermonkey + Chrome / Edge / Firefox
-
-Author: @xiaomao0512
+Press Ctrl + S to export study notes
